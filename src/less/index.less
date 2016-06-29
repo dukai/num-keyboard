@@ -1,0 +1,56 @@
+@import "reset";
+@import "base";
+@import "prefixer";
+
+
+.box.green{
+	width: 200px;
+	background: #0f0;
+	border:1px solid #00f;
+	border-radius: 3px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	img{
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+}
+
+.bg{
+	background: url("../images/1.jpg");
+}
+
+
+.num-keyboard{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  background: #f1f1f1;
+  .border-box;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+
+  .nk-box{
+    overflow:hidden;
+  }
+
+
+  .nk-key{
+    width:33.33%;
+    .pull-left;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    .border-box;
+    user-select: none;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 24px;
+    &:active{
+      background:rgba(0,0,0, .3);
+    }
+  }
+}
