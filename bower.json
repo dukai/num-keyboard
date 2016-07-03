@@ -8,5 +8,7 @@
       "url": "https://github.com/dukai/num-keyboard/blob/master/LICENSE-MIT"
     }
   ],
-  "dependencies": {}
+  "dependencies": {
+    "dtools": "https://github.com/dukai/dtools.git"
+  }
 }

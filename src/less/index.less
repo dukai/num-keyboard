@@ -3,27 +3,8 @@
 @import "prefixer";
 
 
-.box.green{
-	width: 200px;
-	background: #0f0;
-	border:1px solid #00f;
-	border-radius: 3px;
-	margin: 0 auto;
-	overflow: hidden;
-	position: relative;
-	img{
-		width: 100%;
-		height: 100%;
-		position: relative;
-	}
-}
-
-.bg{
-	background: url("../images/1.jpg");
-}
-
-
 .num-keyboard{
+  .hidden;
   position:fixed;
   bottom:0;
   left:0;
@@ -51,6 +32,26 @@
     font-size: 24px;
     &:active{
       background:rgba(0,0,0, .3);
+    }
+  }
+}
+.input{
+  border: 1px solid #ccc;
+  border-radius:3px;
+  height:40px;
+  margin: 20px;
+  >div{
+    width: percentage(1/6);
+    .pull-left;
+    border-right: 1px solid #ccc;
+    height:40px;
+    .border-box;
+    &:nth-last-child(1){
+      border-right: 0;
+    }
+
+    &.active{
+      background:#333;
     }
   }
 }

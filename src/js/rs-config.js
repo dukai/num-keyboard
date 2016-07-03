@@ -2,6 +2,7 @@ requirejs.config({
     baseUrl: '/js',
     paths: {
         jquery: 'lib/jquery-2.1.4.min',
+        dtools: 'lib/dtools/tools',
         // text: 'lib/text',
         // moment: 'lib/moment.min',
         'app/static-config': 'rs-config'
